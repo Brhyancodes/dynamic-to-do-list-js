@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Assign an onclick event to the remove button
       removeButton.onclick = () => {
         taskList.removeChild(taskListItem);
+        taskListItem.classList.add('removed'); // Add the 'removed' class to the task list item
       };
   
       // Append the remove button to the li element
